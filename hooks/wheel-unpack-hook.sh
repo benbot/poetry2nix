@@ -6,7 +6,7 @@ wheelUnpackPhase(){
     runHook preUnpack
 
     mkdir -p dist
-    cp -r "$src" "dist/$(stripHash "$src")"
+    #cp -r "$src" "dist/$(stripHash "$src")"
 
 #     runHook postUnpack # Calls find...?
     echo "Finished executing wheelUnpackPhase"
